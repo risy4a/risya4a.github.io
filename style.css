@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+:root{
+    --primary: #0e3547;
+    --light: #fff;
+    --warning: rgb(164, 98, 98)f;
+  }
+
+/****************
+#Custom CSS
+*******************/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none!important;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    overflow: auto;
+} 
+
+.sports{
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 340px
+}
+.sports img{
+    width: 100%;
+    height: 360px;
+}
+
+.special_event{
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 340px
+}
+
+.special_event img{
+    width: 100%;
+    height: 360px;
+}
+.sports_section{
+    padding-top: 100px;
+}
+.special_event_section{
+    padding-top: 100px;
+}
+.desc{
+    padding: 15px;
+    text-align: center;
+    height: 80px;
+}
+.about{
+    width: 100%;
+    padding: 140px 0px;
+    background-color: #0e3547;
+}
+.about img{
+    height: 450px;
+    width: 350px;
+}
+.about-text{
+    width: 550px;
+    color: #ccc;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact{
+    min-height: 100vh;
+    background-color: #2b6b88;
+    padding: 50px;
+    text-align: center;
+}
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/**********************
+#Header CSS
+*********************/
+header{
+    position: absolute;
+    z-index: 99999;
+    width: 100%;
+}
+header .nav-item .nav-link{
+    font-size: 14px;
+    color: var(--light);
+    font-weight: 600;
+    margin-left: 20px
+}
+.navbar-toggler{
+    outline: none!important;
+    border: none!important;
+    color: var(--warning);
+    box-shadow: none!important;
+    border-radius: none!important;
+}
+
+.input{
+    display: none;
+}
+
+/*****************************
+#Hero Section
+*******************************/
+.hero{
+    width: 100%;
+ }
+ .hero .carousel-item img{
+     height: 100vh;
+     width: 100%;
+     object-fit: fill;
+     background-size: cover!important;
+     background-position: center;
+     background-repeat: no-repeat;
+ }
+ .hero .carousel-item::before{
+     content: '';
+     background-color: black;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     opacity: .8;
+ }
+ .hero .carousel-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+ }
+ .hero .carousel-content-container{
+    text-align: center;
+    color: var(--light);
+ }
+ .hero .carousel-content-container h2{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 50px;
+ }
+ .hero .carousel-content-container {
+    width: 70%;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin: 0 auto 30px auto;
+ }
+
+ .buttons .button1{
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 12px 30px;
+    line-height: 1px;
+    margin: 10px 10px;
+    color: var(--light);
+    border: 1px solid var(--light);
+    border-radius: 50px;
+ }
+
+ @media(max-width:768px)
+ {
+
+.hero .carousel-content-container h2{
+    font-size: 35px;
+
+}
+.hero .carousel-content-container {
+    font-size: 13px;
+}
+
+}
