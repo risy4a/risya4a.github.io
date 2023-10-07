@@ -159,6 +159,65 @@ textarea:focus{
     background-color: #b9beb0;
 }
 
+/*****************************
+#Clock
+*****************************/
+
+.clock {
+  margin: 60px auto;
+  text-align: center;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.clock-block {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 100px;
+  height: 98px;
+  margin: 0 8px;
+  padding-top: 16px;
+  line-height: 1;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.3);
+  background: #e5e7eb;
+  border: 1px solid #9fa2ad;
+  border-radius: 3px 3px 2px 2px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: -webkit-linear-gradient(top, #f1f2f5, #e5e7eb 20%, #c2c5d1 50%, #e5e7eb 80%, #e4e5eb);
+  background-image: -moz-linear-gradient(top, #f1f2f5, #e5e7eb 20%, #c2c5d1 50%, #e5e7eb 80%, #e4e5eb);
+  background-image: -o-linear-gradient(top, #f1f2f5, #e5e7eb 20%, #c2c5d1 50%, #e5e7eb 80%, #e4e5eb);
+  background-image: linear-gradient(to bottom, #f1f2f5, #e5e7eb 20%, #c2c5d1 50%, #e5e7eb 80%, #e4e5eb);
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+.clock-val {
+  display: block;
+  position: relative;
+  z-index: 1;
+  font-size: 64px;
+  font-weight: bold;
+  color: #4f5258;
+}
+
+.clock-unit {
+  display: block;
+  margin-top: -2px;
+  font-size: 13px;
+  font-weight: 200;
+  color: black;
+  text-transform: capitalize;
+}
+
 /**********************
 #Header CSS
 *********************/
